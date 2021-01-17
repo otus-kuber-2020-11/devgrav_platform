@@ -4,7 +4,6 @@ RUN apt-get -y update && apt-get -y install procps
 
 RUN usermod -u 1001 nginx
 
-COPY /app /app
 COPY nginx.conf /etc/nginx/
 
 EXPOSE 8000 8000
